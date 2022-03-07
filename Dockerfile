@@ -5,6 +5,7 @@ WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
 RUN gem install bundler -v 1.17.3
+RUN gem install activesupport -v 6.1.4.6
 RUN gem install contrast-agent
 RUN gem install contrast-service
 Run ./contrast_service &
