@@ -13,7 +13,7 @@ This repo includes the components necessary to instrument contrast Assess/Protec
 Specifically modified:
 
 1. The Gemfile includes the contrast-agent as a dependency (note: it doesn't include a version so every time RailsGoat is built, it should include the latest version of the agent). 
-2. The Dockerfile includes all of the gem updates required to instrument Contrast Assess/Protect and also updates the database. 
+2. The Dockerfile includes all of the gem updates required to instrument Contrast Assess/Protect and also seeds the database. 
 3. The docker-compose.yml includes the path to the contrast_security.yaml (not included), and sets a few other specific environment variables. 
 4. Three other docker-compose YAMLs depending on what "environment" you're wanting to run: Development, QA, or Production.
 
