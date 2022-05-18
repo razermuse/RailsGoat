@@ -8,7 +8,7 @@ THIS WEB APPLICATION CONTAINS NUMEROUS SECURITY VULNERABILITIES WHICH WILL RENDE
 Google Chrome performs filtering for reflected XSS attacks. These attacks will not work unless chrome is run with the argument `--disable-xss-auditor`.
 
 ### Contrast Instrumentation 
-This repo includes the components necessary to instrument contrast Assess/Protect with this Node.js application except for the contrast_security.yaml file containing the connection strings.
+This repo includes the components necessary to instrument contrast Assess/Protect with this Ruby on Rails application except for the contrast_security.yaml file containing the connection strings.
 
 Specifically modified:
 
