@@ -13,7 +13,6 @@ services:
       - CONTRAST_CONFIG_PATH=/myapp/contrast_security.yaml   
       - CONTRAST__ENABLE=TRUE
       - CONTRAST__APPLICATION__NAME=RailsGoat
-      - CONTRAST__APPLICATION__GROUP=application_control_2
       - CONTRAST__APPLICATION__METADATA=bU=PS, contact=steve.smith@contrastsecurity.com
     ports:
       - "3000:3000"
