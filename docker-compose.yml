@@ -2,17 +2,11 @@ version: "3.7"
 
 services:
   web:
-    image: smithst987/railsgoat:latest
+    image: railsgoat:latest
     container_name: railsgoat
     build: .
     volumes:
       - .:/myapp
-      - ./contrast_security.yaml:/myapp/contrast_security.yaml    
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
-    environment:
-      - CONTRAST_CONFIG_PATH=/myapp/contrast_security.yaml   
-      - CONTRAST__ENABLE=TRUE
-      - CONTRAST__APPLICATION__NAME=RailsGoat
-      - CONTRAST__APPLICATION__METADATA=bU=PS, contact=steve.smith@contrastsecurity.com
     ports:
       - "3000:3000"
