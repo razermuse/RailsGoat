@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   web:
-    image: railsgoat:latest
+    image: railsgoat_docker:latest
     container_name: railsgoat
     build: .
     volumes:
