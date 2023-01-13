@@ -11,6 +11,5 @@ ADD Gemfile.lock /myapp/Gemfile.lock
 RUN gem install activesupport -v 6.1.4.6
 RUN gem install bundler -v 1.17.3
 RUN bundle install
-RUN rails db:setup
 
 ADD . /myapp
