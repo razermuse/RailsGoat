@@ -57,6 +57,6 @@ module Railsgoat
     I18n.config.enforce_available_locales = false
 
     config.action_dispatch.return_only_media_type_on_content_type = false
-    Rails.application.config.hosts << "http://jenkins.synopsys.pw"  
+    
   end
 end
